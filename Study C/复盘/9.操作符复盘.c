@@ -286,7 +286,7 @@
 // }
 // 结构体是一种特殊的类型，和int,double,float,char没有本质的区别；
 
- struct peo
+ struct peo//就相当于int
 {
     int age ;
     char name [12];
@@ -305,5 +305,6 @@ int main()
     struct ebook eb = {{{18,"yiyi","1538466919"},{17,"dada","556552"}},0};
     printf("%s\n",p1.name);
     printf("%s\n",eb.data[1].name);
+    printf("%s\n",eb.data[0].name);
     return 0;
 }
